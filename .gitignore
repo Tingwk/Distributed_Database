@@ -1,0 +1,169 @@
+# This file specifies the intentionally untracked files that git should ignore.
+# Temp files created by most text editors.
+*~
+# Merge files created by git
+*.orig
+
+# Java bytecode
+*.class
+# Byte compiled python modules.
+*.pyc
+# vim swap files
+.*.sw?
+.sw?
+# Vscode settings directory
+.vscode
+# OS X specific files
+.DS_store
+Last login: Sat May 11 12:59:59 on ttys000
+➜  ~ cd workspace
+➜  workspace ls
+15445_fall2023         cpp_concurrency        raftcore
+CPP                    cpp_lsm                rust_learing
+MyTinySTL              kuze_tutorial          source_code
+cmake_demo             mit6.824               stl_implementation
+cmu15213               mit6.828               system-programming-c++
+codeforces             mit6.858               tools
+➜  workspace cd cpp_lsm
+➜  cpp_lsm ls
+CMakeLists.txt src
+➜  cpp_lsm cd ..
+➜  workspace ls
+15445_fall2023         cpp_concurrency        raftcore
+CPP                    cpp_lsm                rust_learing
+MyTinySTL              kuze_tutorial          source_code
+cmake_demo             mit6.824               stl_implementation
+cmu15213               mit6.828               system-programming-c++
+codeforces             mit6.858               tools
+➜  workspace cd source_code
+➜  source_code ls
+boost          duckdb         kuzu           sgi_stl
+boost_tutorial facebook-folly mysql          tmp
+➜  source_code cd tmp
+➜  tmp git:(main) ls
+README.md
+➜  tmp git:(main) cd ..
+➜  source_code rm -rf tmp
+➜  source_code mkdir source
+➜  source_code cd source
+➜  source git init
+Initialized empty Git repository in /Users/glaucus/workspace/source_code/source/.git/
+➜  source git:(main) echo "# first_repo" >> README.md
+➜  source git:(main) ✗ git add .
+➜  source git:(main) ✗ git commit -m "first commit"
+[main (root-commit) 4c2d3db] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+➜  source git:(main) git branch -M main
+➜  source git:(main) git remote add origin https://github.com/Tingwk/first_repo.git
+➜  source git:(main) git push -u origin main
+Username for 'https://github.com/Tingwk/first_repo.git': Tingwk
+Password for 'https://Tingwk@github.com/Tingwk/first_repo.git':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Tingwk/first_repo.git/'
+➜  source git:(main) git push -u origin main
+Username for 'https://github.com/Tingwk/first_repo.git': Tingwk
+Password for 'https://Tingwk@github.com/Tingwk/first_repo.git':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+ 1 README.md                                                           Buffers
+Writing objects: 100% (3/3), 222 bytes | 222.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Tingwk/first_repo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+➜  source git:(main) cd ../
+➜  source_code ls
+boost          duckdb         kuzu           sgi_stl
+boost_tutorial facebook-folly mysql          source
+➜  source_code cd ..
+➜  workspace ls
+15445_fall2023         cpp_concurrency        raftcore
+CPP                    cpp_lsm                rust_learing
+MyTinySTL              kuze_tutorial          source_code
+cmake_demo             mit6.824               stl_implementation
+cmu15213               mit6.828               system-programming-c++
+codeforces             mit6.858               tools
+➜  workspace mkdir distributed_db_implementation
+➜  workspace cd distributed_db_implementation
+➜  distributed_db_implementation ls
+➜  distributed_db_implementation git init
+Initialized empty Git repository in /Users/glaucus/workspace/distributed_db_implementation/.git/
+➜  distributed_db_implementation git:(main) vim README.md
+➜  distributed_db_implementation git:(main) ✗ git add .
+➜  distributed_db_implementation git:(main) ✗ git commit -m "first commit"
+ 1 .gitignore                                                          Buffers
+ 13 # This file specifies the intentionally untracked files that git should igno
+ 12 # Temp files created by most text editors.
+ 11 *~
+ 10 # Merge files created by git
+  9 *.orig
+  8
+  7 # Java bytecode
+  6 *.class
+  5 # Byte compiled python modules.
+  4 *.pyc
+  3 # vim swap files
+  2 .*.sw?
+  1 .sw?
+14  # Vscode setting directory
+  1 .vscode
+~
+~
+~
+~
+~
+~
+~
+ 1  * .gitignore  gitignore  ❖ ⓢ                                  | utf-8  All
+bootstrap_after function failed to execute. Check `SPC h L` for errors.
+ 1 .gitignore                                                          Buffers
+ 13 # This file specifies the intentionally untracked files that git should igno
+ 12 # Temp files created by most text editors.
+ 11 *~
+ 10 # Merge files created by git
+  9 *.orig
+  8
+  7 # Java bytecode
+  6 *.class
+  5 # Byte compiled python modules.
+  4 *.pyc
+  3 # vim swap files
+  2 .*.sw?
+  1 .sw?
+14  # Vscode setting directory
+
+[\] switch-to-the-last-buffer           [Q] close-current-windows
+[c] clear-all-the-buffers               [t] create-new-tab
+[g] vsplit-window                       [v] split-window
+[G] vsplit-previous-buffer              [V] split-previous-buffer
+[o] close-other-windows                 [x] empty-current-buffer
+[q] delete-current-windows
+
+Guide:  [WIN]  [C-h paging/help]
+ 1 .gitignore                                                          Buffers
+ 17 # This file specifies the intentionally untracked files that git should igno
+ 16 # Temp files created by most text editors.
+ 15 *~
+ 14 # Merge files created by git
+ 13 *.orig
+ 12
+ 11 # Java bytecode
+ 10 *.class
+  9 # Byte compiled python modules.
+  8 *.pyc
+  7 # vim swap files
+  6 .*.sw?
+  5 .sw?
+  4 # Vscode settings directory
+  3 .vscode
+  2 # OS X specific files
+  1 .DS_store
+18
+~
+~
+~
+~
+ 1  * .gitignore  gitignore  ❖ ⓢ                                  | utf-8  All
+
